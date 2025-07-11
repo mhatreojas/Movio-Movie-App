@@ -46,8 +46,8 @@ setError(null)
  }finally{
   setLoading(false)
  }
- 
-  }
+
+  };
   return (<>
     <div className="home">
       <form onSubmit={handleSubmit} className="search-form">

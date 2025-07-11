@@ -4,10 +4,12 @@ import { Home } from "./pages/Home";
 import { Routes, Route } from "react-router-dom";
 import Favourites from "./pages/Favourites";
 import NavBar from "./components/NavBar";
+import { MovieProvider } from "./contexts/MovieContext";
 function App() {
  
 
   return (
+    <MovieProvider>
     <div>
     <NavBar/>
     <main className="main-content">
@@ -18,6 +20,7 @@ function App() {
     </main>
 
     </div>
+    </MovieProvider> 
   );
 }
 
